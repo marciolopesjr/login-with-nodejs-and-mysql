@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login with Nodejs</title>
+    <style>
+        .login-form {
+            width: 300px;
+            margin: 0 auto;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        .login-form h1 {
+            text-align: center;
+            color: #4d4d4d;
+            font-size: 24px;
+            padding: 20px 0 20px 0;
+        }
+        
+        .login-form input[type="password"],
+        .login-form input[type="text"] {
+            width: 100%;
+            padding: 15px;
+            border: 1px solid #dddddd;
+            box-sizing: border-box;
+            cursor: pointer;
+            font-weight: bold;
+            color: #FFFFFF;
+        }
+        
+        .login-form input[type="submit"] {
+            width: 100%;
+            padding: 15px;
+            background-color: gray;
+            border: 0;
+            box-sizing: border-box;
+            cursor: pointer;
+            font-weight: bold;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="login-form">
+        <h1>Login</h1>
+        <form action="auth" method="POST">
+            <input type="text" name="username" placeholder="usuário" required>
+            <input type="password" name="password" placeholder="senha" required>
+            <input type="submit">
+        </form>
+    </div>
+</body>
+
+</html>
